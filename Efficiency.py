@@ -802,12 +802,12 @@ if uploaded_files:
             na_rep="-"
         )
 
-        .applymap(
+        .map(
             lambda v: f"color: {UPWARD_COLOR}; font-weight:bold;",
             subset=upward_columns
         )
 
-        .applymap(
+        .map(
             lambda v: f"color: {DOWNWARD_COLOR}; font-weight:bold;",
             subset=downward_columns
         )
